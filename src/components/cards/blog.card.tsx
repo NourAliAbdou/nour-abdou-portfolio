@@ -46,16 +46,16 @@ function BlogCard(props: Props) {
             </li>
           </ul>
           <hr />
-          <p className="card-title mx-1.5 whitespace-normal pt-3  ">
+          <p className="card-title mx-1.5 whitespace-normal pt-3 h-24 ">
             <a
               href={blog.url}
               target="_blank"
-              className="font-weightsemibold hover:text-main-col"
+              className="font-weightsemibold hover:text-main-col "
             >
               {blog.title}
             </a>
           </p>
-          <p className="whitespace-normal mx-1.5 text-sm text-body-text">
+          <p className="whitespace-normal mx-1.5 text-sm text-body-text h-16">
             {blog.description}
           </p>
           <div className="ml-1.5 mt-3 pt-0.5 border-1 border-black w-fit py-1 px-3 rounded-md">

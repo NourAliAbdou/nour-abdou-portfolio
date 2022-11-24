@@ -18,7 +18,7 @@ function VolunteerCard(props: Props) {
 
   const renderCard = (
     <div>
-      <h5>{work.title} </h5>
+      <h5 className="h-9">{work.title} </h5>
       <a
         href={work.companyWebsite}
         target="_blank"
@@ -32,13 +32,16 @@ function VolunteerCard(props: Props) {
         <i className="text-slate-400 uil uil-calendar-alt" />
         <h6 className="text-xs mt-1 ml-1.5 text-slate-400">{work.period}</h6>
       </div>
-      {work.jobType && (
-        <div className="d-flex">
-          <span className="inline-block bg-gray-200 overflow-hidden rounded-full px-1.5 py-0.5 text-xs text-gray-600 mr-2 mb-2">
-            {work.jobType}
-          </span>
-        </div>
-      )}
+
+      <div className="h-7">
+        {work.jobType ? (
+          <div className="d-flex">
+            <span className="inline-block bg-gray-200 overflow-hidden rounded-full px-1.5 py-0.5 text-xs text-gray-600 mr-2 mb-2">
+              {work.jobType}
+            </span>
+          </div>
+        ) : null}
+      </div>
     </div>
   );
   const renderFull = (

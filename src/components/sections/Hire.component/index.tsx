@@ -34,7 +34,7 @@ const Hire = () => {
             </span>
           ))}
         </div>
-        <div className="hover:animate-bounce">
+        <div className="hover:animate-bounce h-16">
           <span className="hover:animate-bounce text-[#151439]">
             {position.position}
           </span>
